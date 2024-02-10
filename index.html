@@ -9,6 +9,27 @@
     <h1 onclick="console.log('I am clicked')">DOM er ajke special events</h1>
     <button onclick="console.log(7)">Click Me</button>
     <button onclick="console.log(65)">Another Button</button>
+    <br>
+    <br>
+
+    <!-- option 1: direct change -->
+    <button onclick="document.body.style.backgroundColor='yellow'">Make yellow</button>
+
+    <!-- option 2: add onclick function -->
+    <button onclick="makeRed()">Make Red</button>
+    <!-- we can also call the function on the console -->
+
+
+    <!-- option 3 -->
+    <button id="make-blue">Make Blue</button>
+    <script>
+        const blue = document.getElementById('make-blue');
+        function makeBlue() {
+            document.body.style.backgroundColor='blue';
+        }
+        // blue.onclick = makeBlue();
+        blue.onclick = makeBlue;
+    </script>
 
     <script src="js/events.js"></script>
 </body>
