@@ -29,7 +29,46 @@
         }
         // blue.onclick = makeBlue();
         blue.onclick = makeBlue;
+
+        /**
+        or:
+
+        blue.onclick = function () {
+            document.body.style.background='blue';
+        }
+        */
     </script>
+
+
+    <!-- option 4: -->
+    <button id="pink">Make Pink</button>
+    <script>
+        const pink = document.getElementById('pink');
+
+        pink.addEventListener('click', makePink);
+
+        function makePink() {
+            document.body.style.backgroundColor='pink';
+        }
+    </script>
+    
+    <!-- option 4: another -->
+    <button id="green">Make Green</button>
+    <script>
+        const green = document.getElementById('green');
+        green.addEventListener('click', function () {
+            document.body.style.backgroundColor='green';
+        })
+    </script>
+
+    <!-- option 4: final -->
+    <button id="goldenrod">Make goldenRod</button>
+    <script>
+        document.getElementById('goldenrod').addEventListener('click', function () {
+            document.body.style.backgroundColor = 'goldenrod';
+        });
+    </script>
+
 
     <script src="js/events.js"></script>
 </body>
