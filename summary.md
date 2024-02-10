@@ -12,6 +12,7 @@
 - option 3: another --> using selector then add onclick function(reference)
 
     - if we call then function then it execute before click on it
+        - because, age '=' er right side execute hoy then left side check kore
     - we use reference so that it works after clicking
 
 - option 4: addEventListener('click', function_reference);
