@@ -20,3 +20,11 @@
     - example: click, blur, mouseenter, etc.
 
 - option 4(another): addEventListener('click', write a function);
+
+
+### Event Bubble
+==> A js behavior that propagates events from child elements to parent elements.
+
+-  It happens when an element receives an event, and the event bubbles up to its parent and ancestor elements in the DOM tree until it gets to the root element. 
+- to stop the propagation we use: event.stopPropagation();
+- to stop the siblings propagation we use: event.stopImmediatePropagation();
