@@ -8,6 +8,12 @@
 <body>
     <h1>Final DOM Event Handlers</h1>
     <h3 id="handler-status">Default Text</h3>
+
+    <p id="p-text">Default Input text</p>
+    <input type="text" name="" placeholder="input" id="input-field" value="">
+    <button id="update">Update</button>
+    <br><br>
+
     <button onclick="handleOnClick()">Handle Event by Add onclick Function</button>
     <button id="event-listener">Handle event by addEventListener</button>
 
@@ -17,13 +23,21 @@
             const handlerStatus = document.getElementById('handler-status');
 
             handlerStatus.innerText = 'Handled by function attached on onclick attribute';
-
-            // option 2: via addEventListener
-            document.getElementById('event-listener').addEventListener('click', function() {
-                const handlerStatus = document.getElementById('handler-status');
-
-                handlerStatus.innerText = 'Text updated by add Event listener button';
-            })
         }
+        // option 2: via addEventListener
+        document.getElementById('event-listener').addEventListener('click', function() {
+            const handlerStatus = document.getElementById('handler-status');
+
+            handlerStatus.innerText = 'Text updated by add Event listener button';
+        })
+
+
+        // option 2: recap
+        document.getElementById('update').addEventListener('click', function () {
+            document.getElementById('p-text').innerText = document.getElementById('input-field').value;
+
+            document.getElementById('input-field').value="";
+        })
+        
     </script>
 </body>
