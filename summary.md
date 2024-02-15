@@ -15,7 +15,7 @@
         - because, age '=' er right side execute hoy then left side check kore
     - we use reference so that it works after clicking
 
-- option 4: addEventListener('event', function_call);
+- option 4: addEventListener('event', function_reference);
     - if we call then function will execute automatically
     - example: click, blur, mouseenter, etc.
 
